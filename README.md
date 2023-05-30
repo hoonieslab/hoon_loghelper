@@ -1,4 +1,4 @@
-# hoon_loghelper
+# hoon_loghelper [![Go Reference](https://pkg.go.dev/badge/github.com/hoonieslab/hoon_loghelper.svg)](https://pkg.go.dev/github.com/hoonieslab/hoon_loghelper)
 
 make that easier using zap and registering log plugin using gorm.
 
