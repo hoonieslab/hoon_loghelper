@@ -1,4 +1,4 @@
-# hoon_loghelper
+# hoon_loghelper [![GoDoc][doc-img]][doc]
 
 make that easier using zap and registering log plugin using gorm.
 
