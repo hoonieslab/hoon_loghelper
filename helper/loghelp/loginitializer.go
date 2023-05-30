@@ -12,10 +12,6 @@ import (
 var consoleLogger *zap.Logger
 var fileLogger *zap.Logger
 
-/**
- * Escape String JSON Encoder : START
- */
-
 type EscapeSeqJSONEncoder struct {
 	zapcore.Encoder
 }
@@ -32,7 +28,6 @@ func (enc *EscapeSeqJSONEncoder) EncodeEntry(entry zapcore.Entry, fields []zapco
 	}
 	newb := buffer.NewPool().Get()
 
-	// 이스케이핑 할 문자 재정열
 	replaceStr := bytes.Replace(b.Bytes(), []byte("\\n"), []byte("\n"), -1)
 	replaceStr = bytes.Replace(replaceStr, []byte("\\r"), []byte("\r"), -1)
 	replaceStr = bytes.Replace(replaceStr, []byte("\\t"), []byte("\t"), -1)
@@ -41,10 +36,6 @@ func (enc *EscapeSeqJSONEncoder) EncodeEntry(entry zapcore.Entry, fields []zapco
 
 	return newb, nil
 }
-
-/**
- * Escape String JSON Encoder : END
- */
 
 // Init intialize hoon log
 func Init() {

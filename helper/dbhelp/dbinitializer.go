@@ -19,9 +19,6 @@ type DbInfo struct {
 	DbType string
 }
 
-/**
- * 실행 쿼리 로깅을 위한 Plugin 작성
- */
 type ZapLoggingPlugin struct {
 	PluginName string
 	Desc       string
