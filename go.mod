@@ -1,4 +1,4 @@
-module github.com/hoon_loghelper
+module github.com/hoonieslab/hoon_loghelper
 
 go 1.18
 

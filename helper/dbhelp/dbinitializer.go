@@ -4,12 +4,12 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
+	"github.com/hoonieslab/hoon_loghelper/helper/loghelp"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"log"
 	"os"
-	"ourCodelabs.kr/hoon_loghelper/helper/loghelp"
 	"time"
 )
 
